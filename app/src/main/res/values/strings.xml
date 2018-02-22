@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Parse_Test</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="sign_in">Sign In</string>
+    <string name="log_out">Log Out</string>
+    <string name="cancel">Cancel</string>
+    <string name="user_name">User Name</string>
+    <string name="pass_wd">Password</string>
+    <string name="pass_confirm">Confirm Password</string>
+    <string name="welcome">You have signed in. Click to log out.</string>
+    <string name="enter_score">Enter your score</string>
+
+    <string name="back4app_server_url">https://parseapi.back4app.com/</string>
+    <string name="back4app_app_id">hI0glpTrljKbV34lex3X6nflX0gW5cKdDlPh2G2l</string>
+    <string name="back4app_client_key">EBhYevgaoR4ZbiH7u7Hlnk9wznFIeqcWxZuxFt7x</string>
+</resources>
