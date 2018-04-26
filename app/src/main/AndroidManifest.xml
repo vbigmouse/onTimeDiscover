@@ -19,15 +19,18 @@
 
         <meta-data
             android:name="com.parse.SERVER_URL"
-            android:value="https://parseapi.back4app.com/" />
+            android:value="@string/parse_dev_server_url" />
         <meta-data
             android:name="com.parse.APPLICATION_ID"
-            android:value="@string/back4app_app_id" />
+            android:value="@string/parse_dev_app_id" />
         <meta-data
             android:name="com.parse.CLIENT_KEY"
-            android:value="@string/back4app_client_key" />
-        <activity android:name="SignUp" />
-        <activity android:name="LogOut" />
+            android:value="@string/parse_dev_client_key" />
+        <activity android:name=".old_SignUp" />
+        <activity android:name=".old_LogOut" />
+        <activity android:name=".Discover" />
+        <activity android:name=".Quote" />
+        <activity android:name=".Riddle" />
 
     </application>
 
