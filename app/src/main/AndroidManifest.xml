@@ -26,8 +26,6 @@
         <meta-data
             android:name="com.parse.CLIENT_KEY"
             android:value="@string/parse_dev_client_key" />
-        <activity android:name=".old_SignUp" />
-        <activity android:name=".old_LogOut" />
         <activity android:name=".Discover" />
         <activity android:name=".Quote" />
         <activity android:name=".Riddle" />
