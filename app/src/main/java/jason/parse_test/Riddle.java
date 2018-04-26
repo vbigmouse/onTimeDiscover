@@ -6,6 +6,7 @@ import android.support.v4.view.GestureDetectorCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
+import android.view.View;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -89,5 +90,9 @@ public class Riddle extends AppCompatActivity {
 			return true;
 
 		}
+	}
+
+	public void onClickShowAnswer(View v) {
+		Toast.makeText(Riddle.this, "Click Text", Toast.LENGTH_SHORT).show();
 	}
 }

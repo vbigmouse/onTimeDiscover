@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="com.parse:parsetwitterutils-android-1.10.6">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/parsetwitterutils-android-1.10.6.aar/8f145a48198c3dc4b1bc6f95fa396c47/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/parsetwitterutils-android-1.10.6.aar/8f145a48198c3dc4b1bc6f95fa396c47/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.parse/parsetwitterutils-android/1.10.6/88c0a31f3fb44eb3fa3abb04026a1b945905eef6/parsetwitterutils-android-1.10.6-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

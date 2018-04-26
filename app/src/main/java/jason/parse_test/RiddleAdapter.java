@@ -30,7 +30,6 @@ public class RiddleAdapter<T extends ParseObject> extends ParseQueryAdapter {
 		super.getItemView(object, v, parent);
 
 		TextView tx_riddle = v.findViewById(R.id.tx_riddle_content);
-		TextView tx_show_answer = v.findViewById(R.id.tx_riddle_show_answer);
 		if (object != null) {
 			tx_riddle.setText(object.getString("riddle"));
 		}
@@ -48,4 +47,5 @@ public class RiddleAdapter<T extends ParseObject> extends ParseQueryAdapter {
 		//TextView textView = v.findViewById(R.id.tx_load_more); //set the button
 		return v;
 	}
+
 }
