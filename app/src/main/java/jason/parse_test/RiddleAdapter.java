@@ -1,11 +1,14 @@
 package jason.parse_test;
 
+import android.app.Activity;
+import android.app.FragmentManager;
 import android.content.Context;
 import android.content.res.Resources;
 import android.support.v4.view.GestureDetectorCompat;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.parse.ParseObject;
 import com.parse.ParseQueryAdapter;
@@ -16,14 +19,18 @@ import com.parse.ParseQueryAdapter;
 
 public class RiddleAdapter<T extends ParseObject> extends ParseQueryAdapter {
 
+	private RiddleAnsFragment mRiddleAnsFragment;
+	private FragmentManager mFragmentManager;
 	private GestureDetectorCompat mDetectorCompat;
 
 	public RiddleAdapter(Context context, QueryFactory<T> queryFactory, int itemViewResource) {
 		super(context, queryFactory, itemViewResource);
+		mRiddleAnsFragment = new RiddleAnsFragment();
+		mFragmentManager = ((Activity)context).getFragmentManager();
 	}
 
 	@Override
-	public View getItemView(ParseObject object, View v, ViewGroup parent) {
+	public View getItemView(final ParseObject object, View v, ViewGroup parent) {
 		if (v == null) {
 			v = View.inflate(getContext(), R.layout.riddle_item_detail, null);
 		}
@@ -33,6 +40,18 @@ public class RiddleAdapter<T extends ParseObject> extends ParseQueryAdapter {
 		if (object != null) {
 			tx_riddle.setText(object.getString("riddle"));
 		}
+		TextView tx_ans = v.findViewById(R.id.tx_riddle_answer);
+		TextView tx_show_ans = v.findViewById(R.id.tx_riddle_show_answer);
+		tx_show_ans.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				mRiddleAnsFragment.updateAns(object);
+				mFragmentManager.beginTransaction()
+						.add(R.id.frame_layout_riddle, mRiddleAnsFragment)
+						.addToBackStack(null)
+						.commit();
+			}
+		});
 		return v;
 	}
 
@@ -47,5 +66,4 @@ public class RiddleAdapter<T extends ParseObject> extends ParseQueryAdapter {
 		//TextView textView = v.findViewById(R.id.tx_load_more); //set the button
 		return v;
 	}
-
 }

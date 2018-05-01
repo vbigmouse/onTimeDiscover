@@ -1,5 +1,6 @@
 package jason.parse_test;
 
+import android.app.FragmentManager;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.view.GestureDetectorCompat;
@@ -25,11 +26,16 @@ import java.util.List;
 public class Riddle extends AppCompatActivity {
 
 	private GestureDetectorCompat mDetectorCompat;
+	private RiddleAnsFragment mRiddleAnsFragment;
+	private FragmentManager mFragmentManager;
 
 	@Override
 	protected  void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.riddle);
+
+		mRiddleAnsFragment = new RiddleAnsFragment();
+		mFragmentManager = getFragmentManager();
 
 		mDetectorCompat = new GestureDetectorCompat(Riddle.this, new RiddleGestureListener());
 
@@ -93,6 +99,6 @@ public class Riddle extends AppCompatActivity {
 	}
 
 	public void onClickShowAnswer(View v) {
-		Toast.makeText(Riddle.this, "Click Text", Toast.LENGTH_SHORT).show();
+		Toast.makeText(Riddle.this, "Click Text ", Toast.LENGTH_SHORT).show();
 	}
 }

@@ -12,19 +12,24 @@
     <string name="parse_dev_server_url">https://live.mobilewareinc.com/parse</string>
     <string name="parse_dev_app_id">WsIJnAQghp1kAsj2ASwgAgWbVJfy6mRiuYRQmGgq</string>
     <string name="parse_dev_client_key">UVsyRemjYXoHOEZgo7Pha9GSG7ACzj9RCtzgSB0d</string>
+    <string name="test">Test</string>
 
     <string name="category_load_more">Load more&#8230;</string>
     <string name="discover">Discover</string>
     <string name="discover_image_des">Image of discover category</string>
+
     <string name="commuter_jam">Commuter Jam</string>
     <string name="commuter_jam_intro">Share and discover new music. It\'s the kind of jam that makes commuting more enjoyable.</string>
+
     <string name="riddles">Riddles</string>
     <string name="riddles_intro">Give your brain a healthy work out.</string>
     <string name="riddle_show_answer">Show answer</string>
+
     <string name="quotes">Quotes</string>
     <string name="quotes_intro">Get inspired with daily quotes.</string>
     <string name="quotes_content">\"%1$s\"</string>
     <string name="quotes_author">- %1$s</string>
+
     <string name="lost_N_found">Lost &amp; Found</string>
     <string name="lost_N_found_intro">Help commuters recover lost items. Report lost or found items here.</string>
 
