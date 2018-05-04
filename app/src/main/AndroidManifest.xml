@@ -29,6 +29,7 @@
         <activity android:name=".Discover" />
         <activity android:name=".Quote" />
         <activity android:name=".Riddle" />
+        <activity android:name=".LostNFound" />
 
     </application>
 

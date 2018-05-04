@@ -3,7 +3,6 @@ package jason.parse_test;
 import android.app.Activity;
 import android.app.FragmentManager;
 import android.content.Context;
-import android.content.res.Resources;
 import android.support.v4.view.GestureDetectorCompat;
 import android.view.View;
 import android.view.ViewGroup;

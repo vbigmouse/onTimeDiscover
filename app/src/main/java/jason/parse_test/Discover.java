@@ -58,6 +58,8 @@ public class Discover extends AppCompatActivity {
 			intent = new Intent(Discover.this, Quote.class);
 		} else if (category == R.string.riddles) {
 			intent = new Intent(Discover.this, Riddle.class);
+		} else if (category == R.string.lost_N_found) {
+			intent = new Intent(Discover.this, LostNFound.class);
 		} else {
 			intent = null;
 		}

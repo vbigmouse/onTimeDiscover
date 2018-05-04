@@ -32,6 +32,11 @@
 
     <string name="lost_N_found">Lost &amp; Found</string>
     <string name="lost_N_found_intro">Help commuters recover lost items. Report lost or found items here.</string>
+    <string name="lost_N_found_image_desc">Image of Lost &amp; Found ID</string>
+    <string name="lost_N_found_status_open">OPEN</string>
+    <string name="lost_N_found_status_closed">CLOSED</string>
+    <string name="lost_N_found_type_lost">LOST</string>
+    <string name="lost_N_found_type_found">FOUND</string>
 
     <!--
     <string name="back4app_server_url">https://parseapi.back4app.com/</string>
