@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/discover_item_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/img_idphoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:maxWidth="40dp"
+                android:maxHeight="40dp"
+                android:contentDescription="@string/lost_N_found_image_desc"
+                app:srcCompat="@mipmap/ic_launcher_round" />
+
+            <TextView
+                android:id="@+id/tx_lost_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:paddingRight="0dp"
+                android:paddingStart="5dp"
+                android:paddingEnd="0dp"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/img_idphoto"
+                android:layout_toRightOf="@+id/img_idphoto"
+                android:layout_toLeftOf="@+id/tx_lost_status"
+                android:layout_toStartOf="@+id/tx_lost_status"
+                android:text="@string/lost_N_found"
+                android:textSize="18sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tx_lost_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:textSize="18sp"
+                android:text="@string/lost_N_found_status_open"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tx_lost_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:paddingRight="0dp"
+                android:paddingStart="5dp"
+                android:paddingEnd="0dp"
+                android:layout_toEndOf="@+id/img_idphoto"
+                android:layout_toRightOf="@+id/img_idphoto"
+                android:layout_below="@id/tx_lost_time"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="@string/lost_N_found_type_found" />
+
+            <TextView
+                android:id="@+id/tx_lost_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:paddingRight="0dp"
+                android:paddingStart="5dp"
+                android:paddingEnd="0dp"
+                android:layout_toEndOf="@id/img_idphoto"
+                android:layout_toRightOf="@id/img_idphoto"
+                android:layout_alignBottom="@id/img_idphoto"
+                android:text="@string/lost_N_found_type_lost" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tx_lost_item_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:paddingTop="5dp"
+            android:text="@string/riddle_show_answer"
+            android:textAlignment="textStart"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
